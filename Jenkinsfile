@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/Akumar-86/blue-green-deploy.git'
+                git branch: 'main', url: 'https://github.com/Akumar-86/blue-green-deploy.git'
             }
         }
 
